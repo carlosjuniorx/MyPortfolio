@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.myProjects{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dad6d680 ;
+    height:20rem;   
+    color: black;
+    opacity: 0.8;  
+}
+
+a{
+   background-color: rgb(207, 204, 204); 
+   padding: 5px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px;
+}
+.insta{
+    background-color: #dad6d680 ;
+    border: none;
+    box-shadow: none;
+}
+.head{
+    background-image: url(imags/backgroudHeader.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+}
+.selected{
+    max-width: 200px;
+    color: white;
+
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    border-top: 1px outset hsl(0, 0%, 0%,0.1);
+    background-color: #dad6d680 ;
+}
+.descripton{
+    height: 20rem; 
+    opacity: 0.7;
+    
+}
+
+.container-fluid{
+    height: 100vh;
+}
+button{
+    color: blueviolet;
+}
+

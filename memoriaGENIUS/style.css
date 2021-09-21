@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    background-color: blueviolet;
+}
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.genius{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    'c-green c-red'
+    'c-yellow c-blue';
+    gap: 10px;
+    border: 1px solid rgb(29, 28, 28);
+    background-color: rgb(180, 179, 179);
+    border-radius: 100%;
+    width: 550px;
+    height: 550px;
+}
+.meio{
+    position: absolute;
+    background-color: coral;
+    height: 105px;
+    width: 105px;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: 0 0 1em black;
+    filter: brightness(50%);
+}
+
+.blue{
+    
+    grid-area: c-blue;
+    background-color: rgb(56, 56, 109);
+    border-bottom-right-radius: 100%;
+    box-shadow: 1px 1px 15px black;
+    filter: brightness(50%);
+    
+}
+.yellow{
+    grid-area: c-yellow;
+    background-color: rgb(221, 221, 3);
+    border-bottom-left-radius: 100%;
+    box-shadow: 1px 1px 15px black;
+    filter: brightness(50%);
+}
+.green{
+    grid-area: c-green;
+    background-color: green;
+    border-top-left-radius: 100%;
+    box-shadow: 1px 1px 15px black;
+    filter: brightness(50%);
+}
+.red{
+    grid-area: c-red;
+    background-color: brown;
+    border-top-right-radius: 100%;
+    box-shadow: 1px 1px 15px black;
+    filter: brightness(50%);
+}
+.lose{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    filter: brightness(50%);   
+    border-radius: 15px;
+}
+.reload{
+    border: none;
+    text-decoration: none;
+    margin-top: 5px;
+    height: 90px;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgb(143, 127, 235);
+    border-radius: 100%;
+    box-shadow: 0 0 1em black;
+    filter: brightness(50%);
+    
+}
+.none{
+    display: none;
+}
+.selected{
+    box-shadow: none;
+    filter: none;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+@media only screen and (max-height: 600px) {
+    .genius{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .genius{
+        width: 300px;
+        height: 300px;
+    }
+}

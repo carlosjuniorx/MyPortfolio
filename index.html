@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+
+    <title>May Portfolio</title>
+</head>
+<body >
+    <div class="container-fluid">
+        <div class="row head">
+            <header class="row">
+                <div class="col">
+                    <h1 class="titulo">Welcome to my simple Portfolio</h1>
+                </div>
+               
+            </header>
+            <div class="row mt-5 descripton">
+                <div class="col d-flex justify-content-center align-items-end">
+                    <p class="selected">Through this web site I come to present some small works.</p>
+                </div>            
+            </div>
+        </div>
+            <div class="row myProjects">
+                <nav class="col">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link text-secondary active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                            type="button" role="tab" aria-controls="nav-home" aria-selected="true">La Fugazza</button>
+                        <button class="nav-link text-secondary" id="nav-geniu-tab" data-bs-toggle="tab" data-bs-target="#nav-geniu"
+                            type="button" role="tab" aria-controls="nav-geniu" aria-selected="false">Game Genius</button>
+                        <button class="nav-link text-secondary" id="nav-memoria-tab" data-bs-toggle="tab" data-bs-target="#nav-memoria"
+                            type="button" role="tab" aria-controls="nav-memoria" aria-selected="false">Memória</button>
+                        <button class="nav-link text-secondary" id="nav-rex-tab" data-bs-toggle="tab" data-bs-target="#nav-rex"
+                            type="button" role="tab" aria-controls="nav-rex" aria-selected="false">T-Rex</button>
+                        <button class="nav-link text-secondary" id="nav-insta-tab" data-bs-toggle="tab" data-bs-target="#nav-insta"
+                            type="button" role="tab" aria-controls="nav-insta" aria-selected="false">Clone Insta</button>
+                        <button class="nav-link text-secondary" id="nav-heli-tab" data-bs-toggle="tab" data-bs-target="#nav-heli"
+                            type="button" role="tab" aria-controls="nav-heli" aria-selected="false">Game helicóptero</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent col">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <p>
+                            Aqui tem um link de um site que fiz com nextJS.
+                        </p>
+                        <a class="text-secondary text-decoration-none" href="http://www.lafugazza.com.br" target="black">LA Fugazza</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-geniu" role="tabpanel" aria-labelledby="nav-geniu-tab">
+                        <p>
+                            Velho jogo de memória Genius. Feito puramente com o trio HTML, CSS e JAVASCRIPT.
+                        </p>
+                        <a class="text-secondary text-decoration-none" href="memoriaGENIUS/index.html" target="black">Genius</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-memoria" role="tabpanel" aria-labelledby="nav-memoria-tab">
+                        <p>
+                            Mais classico impossivel, jogo memória feito também puramente com o trio HTML, CSS e JS.
+                        </p>
+                        <a class="text-secondary text-decoration-none" href="Memoria/index.html"
+                            target="black">Memória</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-rex" role="tabpanel" aria-labelledby="nav-rex-tab">
+                        <p>
+                            Versão simplificada do game t-rex que vem integrado ao Google Chrome.  
+                        </p>
+                        <a class="text-secondary text-decoration-none" href="T-RexGame/index.html"
+                            target="black">T-Rex</a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-insta" role="tabpanel" aria-labelledby="nav-insta-tab">
+                        <p>
+                           Clone do Layout da pagina de login do instagram.  
+                        </p>
+                        <a class="text-secondary text-decoration-none insta" href="interfaceInstagram/index.html"
+                            target="black"><img width="50px" src="imags/instagram.png" alt=""></a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-heli" role="tabpanel" aria-labelledby="nav-heli-tab">
+                        <p>
+                           Game de helicóptero feito com o trio HTML, CSS e JS, e também Jquery.  
+                        </p>
+                        <a class="text-secondary text-decoration-none insta" href="game-helicoptero/index.html"
+                            target="black">Helicóptero</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <footer>
+                    <div class="col mb-2">
+                        <a class="insta" target="blank" href="https://github.com/carlosjuniorx"><img width="40px" src="imags/github.png"></a>                  
+                    </div>   
+                    © 2021 Carlos Roberto R. M. J. 
+                </footer>
+            </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

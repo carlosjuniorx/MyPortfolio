@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+}
+.button{
+    margin: 20px;
+}
+.button > button{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(253, 230, 234);
+    border-radius: 15%;
+    box-shadow: 0 0 5px black;
+}
+.table{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+   
+}
+.cards{
+    width: 150px;
+    background-color: rgb(253, 230, 234);
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 pink;
+    
+}
+.back{
+    position: absolute;
+    transform: rotateY(180deg);   
+}
+
+.back, .face{
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+.flip{
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width:650px){
+    .table{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (max-width:500px){
+    .table{
+        grid-template-columns: auto auto;
+    }
+}
